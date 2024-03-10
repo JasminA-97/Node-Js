@@ -5,15 +5,15 @@ weekDays=['mon','tue','wed','thu','fri']
 weekDays.push('sat',89);
 console.log(weekDays);
 
-//UNSHIFT(ITEM) : insert an elmt AT THE BEGINNING
+//2. UNSHIFT(ITEM) : insert an elmt AT THE BEGINNING
 weekDays.unshift('sun',89);
 console.log(weekDays);
 
-//POP() : REMOVE elmt AT THE END
+//3. POP() : REMOVE elmt AT THE END
 weekDays.pop()
 console.log(weekDays);
 
-//SHIFT(ITEM) : REMOVE elmt from the 
+//4. SHIFT(ITEM) : REMOVE elmt from the 
 weekDays.shift();
 console.log(weekDays);
 

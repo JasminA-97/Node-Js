@@ -1,0 +1,177 @@
+
+            JAVASCRIPT - Programming Concepts
+    -----------------------------------------------
+
+    1. Node JS - provide runtime environment and js library 
+    2. Basic Concepts in JS
+        - Display content : console.log(content)
+        - Data Types in JS : use typeof
+            - string
+            - number
+            - boolean
+            - object
+        - Identifiers : set of rules for set up name for a variable
+        - Variable : use to store data
+            - Using var keyword :
+                syntax : var variableName / var variable_name = value
+            - Using const keyword :
+                syntax : const variable_name = value
+            - Using let keyword
+                syntax : let variable_name = value
+        - Hoisting in JS : using a data before creating it
+        - Differece between type of variable
+        --------var-----------          ------const---------------      ---------let-------------
+        - use var keyword               use const keyword               use let keyword
+        - can reassigned its value      cannot reassign its value       can reassign its value
+        - Global scope                  Block scope                     Block scope
+        - Hoisted with undefined        Hoisted without a value         Hoisted without a value
+        - Joining different type of datas in js
+            - using commas
+            - using + operator ( concantenation )
+            - using ` (template literals)
+        - Operators in JS
+            - Assignment Operators : variable_name = value
+            - Arithmentic Operators : + - * / % **
+            - Relational Operators : > >= < <= == != === 
+            - Logical Operators : && || !
+                -------AND------ -------OR------- -----NOT--------
+                    T && T = T      T || T = T      !T = F
+                    T && F = F      T || F = T      !F = T
+                    F && T = F      F || T = T 
+                    F && F = F      F || F = F 
+            - Increment / Decrement Operators : ++ --
+            - Short hand Operators : += -= 
+            - Ternary Operators : condition?Statements when condition become true:Statements when condition become false
+            - Truthy operator : condition && Statements when condition become true
+            - Spread operator ... : used to expand an iterating variable to a single iterating variable
+            - Rest operator ... : used to combine rest of the data to a single array
+        - Conditional Statements
+            - if Statements :
+                syntax : if(condition){ if body: executes when condition satisfy }
+            - if-else Statements :
+                syntax : if(condition){ if body: executes when condition satisfy }else { executes when condition false }
+            - else-if ladders
+            - Switch cases
+        - Looping Statements : Repeating same task multiple times
+            - while loop 
+                syntax : 
+                    1. Initialise a variable with a value
+                    2. while(condition should includes that Initialised variable){
+                        while body executes when condition become true
+                    3. Change the value of variable that used in the condition
+                    }
+            - for loop
+                syntax : for(Initialise a variable with a value;condition should includes that Initialised variable;Change the value of variable that used in the condition){
+                    for body executes when condition become true
+                }
+                - break Statements 
+                - continue Statements
+            - nested loop : A loop inside another loop
+        - Function : used to perform specific task during the code
+            - 2 parts
+                - Function Definition : defining the task to be performed
+                    syntax : function function-name(parameters used to perform task){
+                        defining task in function body
+                    }
+                - Function  Call : to execute a function
+                    syntax : function-name(arguments to be passed to the function Definition)
+            - return Statements : return data from function Definition to function Call
+            - Types of function
+                - Arrow function : alternative for function definition, function-name = (parameters used to perform task)=>{ defining task in function body }
+                - Predefined function : console.log(), Math.floor()
+                - Callback function : A function definition inside another function call, completes its executin only after completion of the function inside it
+                - Anonymous function : Self executing function , nameless function
+                - Nested function : A function definition inside another function definition
+                - Closure property : 
+                - Recursive function : Calling a function inside its own definition
+        - Array : used to hold multiple values in a single variable
+            - to access each value from an array use its index , array-name[index-number]
+            - Total count of items in array : length 
+            - type of array : object
+            - To access array items one by one
+                - using normal for loop
+                - using for - of loop : for(let variable-name of array-name){} return array items
+                - using for - in loop : for(let variable-name in array-name){} return array index
+            - Methods : array-name.method()
+                - push(item) : used to insert data at end of an existing array
+                - unshift(item) : used to insert data at first of an existing array
+                - pop() : used to remove data at end of an existing array
+                - shift() : used to remove data at first of an existing array
+                - sort(compareFn) : used to sort array
+                    - compareFn : (num1,num2)=>num1-num2 (ascending sort)
+                                : (num1,num2)=>num2-num1 (descending sort)
+                - forEach(callbackfn:(value,index,array)=>void) : Alternative to for-of loop
+                - filter(callbackfn) : return a new array with items satisfying the condition from an existing array
+                - find(callbackfn) :  return an items satisfying the condition from an existing array
+                - map(callbackfn) : return a new array with values after applying a mapping function to existing array
+                - reduce(callbackfn) : return a single value which is either smallest/largest/total sum from an existing array after applying reduce function
+                - reduceRight(callbackfn) : return a single value (either smallest/largest) which is the first item  from an existing array after applying reduce function
+                - some(callbackfn) : return true / false based on a condition applied to all items in given array
+                - flat(depth) : return array with corresponding depth as dimension, to convert to 1 dimension use depth as 'Infinity'
+                - includes(key) : return boolean based on the key present in the given array 
+                - indexOf(item) : return index number corresponding to the 
+                - splice(startingIndex, delete count) : used to delete items from an array and return array with removed item
+                - join(seperator) : return a string with array value separated using the given seperator
+        - String : 
+            - Methods
+                - substring() : Returns the substring at the specified location within a String object
+                - toLowerCase()
+                - toUpperCase()
+                - startsWith()
+                - endsWith()
+                - trim()
+                - includes()
+                - split()
+                - slice()
+        - Object : Data storing as a {key:value} pair
+            - use key  : To access value from an object
+                syntax : object-name['key'] / object-name.key
+            - using in operator we can check a key is in object, return a boolean
+                syntax : "key" in object-name
+            - Insert value to an exsiting object
+                object-name["key"] = value / object-name.key = value
+            - Object.values(object-name) : return an array of value of the given object
+            - Object.keys(object-name) : return an array of keys of the given object
+            - Object.assign(target-object,source) : used to insert data in an existing target obejct
+            - Methods
+                - hasOwnProperty(key) : we can check a key is in object, return a boolean
+        - Access Specifiers : used to specify the access of a variable / function
+            - public
+            - private
+            - protected
+        - Object Oriented Programming (OOPs)
+            - Object : real time entity
+            - Class : Blueprint of object
+            - Reference : used to refer property to its class
+            - constructor() : method used to initialise class property
+            - Features of OOPs
+                - Inheritance : used to get data from one class to another
+                    - Classical Inheritance : use extends keyword
+                    - Prototype Inheritance : use __proto__
+                - Polymorphism : to implement Polymorphism in js use REST operator (...)
+                - Abstraction : hiding the important Data from user 
+                - Encapsulation : Data inside another data like class
+
+    JAVASCRIPT - Front end Concepts
+    --------------------------------
+
+    - Used to provide behavior to Web page
+    - Ways to applying JS in HTML
+        - Internal JS : use 'script tag' to provide js code in HTML
+        - External JS : link External js file with HTML using script tag
+    - DOM : Document object Model for a web page
+        - A tree structure corresponding to a webpage , there will be a single root/node (html tag) which is made of js object
+        - js can access webpage / HTML elements via DOM using 'document' object
+    - DOM Methods : Selecting HTML elements to js code 
+        - using tag name : document.getElementsByTagName('tag-name')
+        - using class name : document.getElementsByClassName('class-name')
+        - using id : document.getElementsById('id-name')
+        - Using querySelector : document.querySelector('tag/#id/.class-name')
+        - Using querySelectorAll : document.querySelectorAll('tag/#id/.class-name')
+    - Event : triggered by user actions 
+        - Mouse Related Events : click, move, drag ...
+        - Keyboaord Related Events : keypressdown, keyup ....
+        - Text based Events
+    - Access / Update content of a tag
+        - innerHTML 
+        - innerText

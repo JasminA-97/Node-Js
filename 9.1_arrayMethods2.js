@@ -17,3 +17,9 @@
 
 //13. flat(depth) : return array with corresponding depth as dimension; reduce dimension by 1
 //                  to convert to 1D use depth as 'Infinity'
+
+                    // reduce dimension by 1
+                    // newArray=numArray.flat(depth)
+                    // eg:newArray=numArray.flat(1) : reduces to 1D Array, if it is 2D array
+                    // eg:newArray=numArray.flat(2) : reduces to 1D Array, if it is 3D array
+                    // eg:newArray=numArray.flat(infinity) : reduces to 1D Array, from any dimension
